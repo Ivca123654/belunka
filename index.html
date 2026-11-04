@@ -24,7 +24,7 @@ const norm=s=>(s||'').trim().toLocaleUpperCase('cs-CZ').normalize('NFD').replace
 function save(){localStorage.setItem('belunkaSolved',JSON.stringify(solved))}
 function sound(){
   if(current===1){
-    const audio=new Audio('sova.mp3');
+    const audio=new Audio('freesound_community-owl-hooting-48028.mp3');
     audio.volume=0.8;
     audio.play();
   }
