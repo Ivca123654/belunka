@@ -23,18 +23,22 @@ const app=document.getElementById('app');
 const norm=s=>(s||'').trim().toLocaleUpperCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 function save(){localStorage.setItem('belunkaSolved',JSON.stringify(solved))}
 function sound(){
-  let audio;
+  const sounds = {
+    1: 'freesound_community-owl-hooting-48028.mp3',
+    2: 'les.mp3',
+    3: 'dyně.mp3',
+    4: 'hugo.mp3',
+    5: 'havran.mp3',
+    6: 'pavouk.mp3',
+    7: 'klic.mp3',
+    8: 'brana.mp3'
+  };
 
-  if(current===1){
-    audio=new Audio('freesound_community-owl-hooting-48028.mp3');
-  }
+  const file = sounds[current];
 
-  if(current===2){
-    audio=new Audio('les.mp3');
-  }
-
-  if(audio){
-    audio.volume=0.8;
+  if(file){
+    const audio = new Audio(file);
+    audio.volume = 0.8;
     audio.play();
   }
 }
