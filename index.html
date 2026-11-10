@@ -15,7 +15,7 @@ const stops=[
 ["Havraní rozcestí","🐦‍⬛","Cesta se dělí na dvě. Na starém ukazateli sedí černý havran, který zná správný směr.","Za slunce chodím všude s tebou, ale ve tmě zmizím. Co jsem?",["STÍN","STIN"],"Ležím na zemi nebo na zdi a kopíruji tvůj tvar.","Ý","Krááá! Takhle asi mluví havrani. Myslíš, že nám rozuměl?"],
 ["Pavučinový les","🕷️","Mezi stromy se lesknou stříbrné pavučiny. Malý pavouk Péťa poctivě hlídá další světýlko.","Nemám vlastní světlo, a přesto v noci zářím. Někdy jsem kulatý a někdy jen tenký srpek. Co jsem?",["MĚSÍC","MESIC"],"Každou noc ho hledáme na obloze.","L","Péťa vypadá mile… jen má trochu moc nožiček."],
 ["Tajemný klíč","🗝️","Pod kamenem leží starý zlatý klíč. Otevírá Bránu mezi světy.","Nemám nohy, a přesto pořád běžím. Mám ručičky, ale nic neunesu. Co jsem?",["HODINY"],"Ukazuji, kolik je právě času.","K","Už vím, kde jsme! Za další zatáčkou je brána domů."],
-["Brána mezi světy","🌙","Před tebou září brána zahalená mlhou. Chybí už jen poslední jiskřička.","Jsem daleko na obloze, v noci blikám jako maličké světýlko. Co jsem?",["HVĚZDA","HVEZDA"],"Na nebi nás bývá mnoho a máme cípy.","O","To je ona! Poslední brána. Rozsvítíme moji lucernu?"]];
+["Brána mezi světy","🌙","Před tebou září brána zahalená mlhou. Chybí už jen poslední jiskřička.","Jsem daleko na obloze, v noci zářím jako maličké světýlko. Co jsem?",["HVĚZDA","HVEZDA"],"Na nebi nás bývá mnoho a máme cípy.","O","To je ona! Poslední brána. Rozsvítíme moji lucernu?"]];
 let solved=JSON.parse(localStorage.getItem('belunkaSolved')||'{}');
 const params=new URLSearchParams(location.search);const requested=params.has('stanoviste');
 let current=+(params.get('stanoviste')||1);if(current<1||current>8)current=1;
